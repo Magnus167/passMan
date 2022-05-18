@@ -90,3 +90,13 @@ def get_password_for_website(website, passFile=None):
     if passFile is None:
         passFile = get_passFile()
     return passFile_to_list(passFile=passFile, website=website)
+
+
+def delete_password(index, passFile):
+    del passFile['passwords'][index]
+    return passFile
+
+def save_passFile(passFile, fileName='pass.json'):
+    with open(fileName, 'w') as f:
+        json.dump(passFile, f)
+    return True
