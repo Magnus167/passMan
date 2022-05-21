@@ -8,13 +8,11 @@
 # Implementation
 
 - gui.py uses PySimpleGUI to create a gui, and loads the password manager passMan from passMan.py.
-- currently, can type/paste website.
-- solution multiple logins not implemented.
-  - load all passWord dicts as list.
-  - cast list to list of concatenated strings.
-  - use space and special chars as delimeters to split search string, and then search for both words IN login pair.
+- the user can search with by website and/or username. 
+- click to copy password
+- can add/delete logins as well
+
 
 # Further Scope
 
-- add a GUI to enable paste website name
 - enable file to be stored on gcp or amazon ec2
