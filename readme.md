@@ -1,6 +1,6 @@
 # passMan.py
 
-- password manager that generates seeded passwords
+- password manager that generates psuedo-random passwords using a random seed
 - each password is stored as a dictionary entry. the keys are indices and the values are dictionaries with website, username, length.
 - password is calculated by creating a string composed of the website, username, index, and seed.
 - this is then hashed with sha256, and the result is mapped to a set of characters.
